@@ -1,0 +1,22 @@
+using UnityEngine;
+
+public class ActivateStrip : MonoBehaviour{
+
+    [SerializeField] GameObject ActiveStrip;
+
+    private void Start(){
+        ActiveStrip.SetActive(false);
+        GameEvents.current.eventCradleActive += Activate;
+        GameEvents.current.eventCradleDeactive += Deactivate;
+    }
+
+    public void Activate()
+    {
+        ActiveStrip.SetActive(true);
+    }
+
+    public void Deactivate()
+    {
+        ActiveStrip.SetActive(false);
+    }
+}
