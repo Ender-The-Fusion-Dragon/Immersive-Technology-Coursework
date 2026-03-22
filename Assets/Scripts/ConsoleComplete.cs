@@ -3,15 +3,15 @@ using UnityEngine;
 public class CradleTrigger : MonoBehaviour{
     private void OnTriggerEnter(Collider other){
         
-        if(other.tag == "craddleBall"){
-            GameEvents.current.SetCradleActive();
+        if(other.tag == "Fuse1"){
+            GameEvents.current.SetConsoleComplete();
         }
     }
 
     private void OnTriggerExit(Collider other){
 
-        if (other.tag == "craddleBall"){
-            GameEvents.current.SetCradleDeactive();
+        if (other.tag == "Fuse1"){
+            GameEvents.current.SetConsoleIncomplete();
         }
     }
 }

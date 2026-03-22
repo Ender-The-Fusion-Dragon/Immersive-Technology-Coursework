@@ -6,8 +6,8 @@ public class ActivateStrip : MonoBehaviour{
 
     private void Start(){
         ActiveStrip.SetActive(false);
-        GameEvents.current.eventCradleActive += Activate;
-        GameEvents.current.eventCradleDeactive += Deactivate;
+        GameEvents.current.eventConsoleComplete += Activate;
+        GameEvents.current.eventConsoleIncomplete += Deactivate;
     }
 
     public void Activate()

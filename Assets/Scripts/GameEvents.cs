@@ -9,21 +9,21 @@ public class GameEvents : MonoBehaviour{
         current = this;
     }
 
-    public event Action eventCradleActive;
-    public event Action eventCradleDeactive;
+    public event Action eventConsoleComplete;
+    public event Action eventConsoleIncomplete;
 
-    public void SetCradleActive(){
+    public void SetConsoleComplete(){
         Debug.Log("Event function called");
-        if (eventCradleActive != null){
-            eventCradleActive();
-            Debug.Log("craddle active event");
+        if (eventConsoleComplete != null){
+            eventConsoleComplete();
+            Debug.Log("open event happened");
         }
     }
 
-    public void SetCradleDeactive()
+    public void SetConsoleIncomplete()
     {
-        if (eventCradleDeactive != null){
-            eventCradleDeactive();
+        if (eventConsoleIncomplete != null){
+            eventConsoleIncomplete();
         }
     }
 }

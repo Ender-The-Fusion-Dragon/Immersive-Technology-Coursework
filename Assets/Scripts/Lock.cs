@@ -5,7 +5,7 @@ public class Lock : MonoBehaviour
 
     [SerializeField] GameObject door;
     [SerializeField] GameObject key;
-      [SerializeField] GameObject handle;
+    [SerializeField] GameObject handle;
 
     private bool locked;
     // Start is called once before the first execution of Update after the MonoBehaviour is created

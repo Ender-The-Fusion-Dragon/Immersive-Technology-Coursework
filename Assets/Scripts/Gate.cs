@@ -8,8 +8,8 @@ public class Gate : MonoBehaviour{
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start(){
         ActiveStrip.SetActive(false);
-        GameEvents.current.eventCradleActive += OpenGate;
-        GameEvents.current.eventCradleDeactive += CloseGate;
+        GameEvents.current.eventConsoleComplete += OpenGate;
+        GameEvents.current.eventConsoleIncomplete += CloseGate;
     }
 
     private void OpenGate(){
